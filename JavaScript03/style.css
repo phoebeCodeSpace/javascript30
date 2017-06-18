@@ -1,0 +1,32 @@
+/*声明全局的 CSS 变量*/
+:root {
+   /*默认值*/
+  --base:#f80;
+  --blur:10px;
+  --spacing:10px;
+}
+
+body {
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    background: #193549;
+}
+.controls {
+  margin-bottom: 50px;
+}
+h1 {
+  font-size: 25px;
+}
+h1 span {
+  color: var(--base);
+}
+input {
+    width: 100px;
+}
+
+img{
+  border:var(--spacing) solid var(--base);
+  filter: blur(var(--blur));
+}
